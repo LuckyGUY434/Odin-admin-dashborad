@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar{
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 1 / 5;
+    grid-template-rows: auto 1fr 2fr;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 1.2rem;
+    gap: 15px;
+}
+
+h1{
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+.title-sidebar{
+    display: flex;
+    flex-direction: row;
+}
+
+.span-title{
+    font-size: 2em;
+    padding-top: 12px;
+}
+
+.mdi-view-dashboard{
+    font-size: 3em;
+    padding-left: 15px;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.settings-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span{
+    margin-right: 10px;
+}
+
+.main-menu > li,
+.settings-menu > li{
+    font-size: 1.5em;
+}
+
+
+
+.header{
+    display: grid;
+    grid-column: 2 / 4;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    padding: 0px 70px 20px 40px;
+}
+
+.section-1{
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-1 > p{
+    font-size: 1.4em;
+    font-weight: bold
+}
+
+.search-menu{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.section-2{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-2 > p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#search{
+    background-color: #e2e8f0;
+    border-radius: 15px;
+    border: none;
+    max-width: 80%;
+    height: 1.7rem;
+}
+
+.profile-image-min{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+.profile-image{
+    height: 65px;
+    width: 65px;
+    border-radius: 30px;
+}
+
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+#name-id{
+    font-size: 1.5em;
+}
+
+button{
+    color: white;
+    background-color: #0ea5e9;
+    border: none;
+    font-size: 1.1em;
+    height: 45px;
+    width: 110px;
+    border-radius:30px;
+}
+
+.main-content{
+    display: grid;
+    grid-column: 2/4;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #e2e8f0;
+    padding: 25px;
+    padding-bottom: 50px;
+    gap: 10px;
+    column-gap: 30px;
+}
+
+.boxes{
+    display: grid;
+    grid-row: 2 / 4;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.project-title,
+.title,
+.trending{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: -6px 0px #eab308;
+}
+
+.box-title{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.box-text{
+    color:grey;
+    font-size: 1em;
+}
+
+.box-icons{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.announcement{
+    display: grid;
+    grid-template-rows: 2fr auto 2fr;
+}
+
+.card{
+    padding: 20px 20px 0px 20px;
+}
+
+.text-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.card-title{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card-content{
+    color: grey;
+    border-bottom: 1px solid gray;
+}
+
+.trending-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 13px;
+    height: 100%;
+    background-color:white;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+
+.trending-user{
+    display: flex;
+    flex-direction: row;
+}
+
+.trending-name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: grey;
+}
+
+.tag-name{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+
+.img1{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
